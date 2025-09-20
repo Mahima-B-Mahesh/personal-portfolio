@@ -1,5 +1,7 @@
 import React from 'react'
 import './About.css'
+import profilePic from "../../assets/profile-pic.jpeg";
+
 
 const About = () => {
   return (
@@ -9,7 +11,7 @@ const About = () => {
         {/* Left Side - Image */}
         <div className="about-image">
           <img 
-            src={`personal-portfolio/assets/profile-pic.jpeg`} 
+            src={profilePic} 
             alt="Mahima B Mahesh" 
           />
         </div>
