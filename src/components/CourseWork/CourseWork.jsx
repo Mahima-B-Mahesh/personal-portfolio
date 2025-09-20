@@ -3,15 +3,26 @@ import './CourseWork.css';
 
 const courseworkData = [
   { name: "Data Structures", level: 90 },
-  { name: "Analysis of Algorithms", level: 85 },
-  { name: "Probability and Statistics", level: 80 },
+  { name: "Analysis of Algorithms", level: 90 },
+  { name: "Probability and Statistics", level: 85 },
   { name: "Computer Networks", level: 75 },
   { name: "Operating Systems", level: 80 },
-  { name: "DBMS", level: 85 },
+  { name: "DBMS", level: 90 },
   { name: "OOPs", level: 90 },
-  { name: "Calculus I-IV", level: 70 },
-  { name: "Linear Algebra", level: 75 },
-  { name: "Data Analysis", level: 80 }
+  { name: "Calculus I-IV", level: 85 },
+  { name: "Linear Algebra", level: 85 },
+  { name: "Data Analysis", level: 80 },
+  { name: "Software Engineering", level: 85 },
+  { name: "Web Technologies", level: 90 },
+  { name: "Cybersecurity", level: 65 },
+  { name: "Compiler Design", level: 70 },
+  { name: "Embedded Systems", level: 65 },
+  { name: "Digital Logic Design", level: 70 },
+  { name: "Microprocessors", level: 60 },
+  { name: "Numerical Methods", level: 75 },
+  { name: "Graph Theory", level: 80 },
+  { name: "Discrete Mathematics", level: 85 },
+
 ];
 
 const Coursework = () => {

@@ -13,6 +13,7 @@ const Navbar = () => {
     { name: "Education", href: "#education" },
     { name: "Course Work", href: "#coursework" },
     { name: "Contact", href: "#contact" },
+    { name: "Resume", href: "https://drive.google.com/file/d/1pp8p0kwDcAFcEVereqwMI1Rm3P2cx2yZ/view?usp=drivesdk" },
   ];
 
   return (

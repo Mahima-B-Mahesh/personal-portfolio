@@ -9,8 +9,19 @@ const skillsData = [
   { name: "CSS3", level: "Advanced" },
   { name: "Tailwind CSS", level: "Intermediate" },
   { name: "Git & GitHub", level: "Intermediate" },
+  { name: "Postman", level: "Intermediate" },
+  { name: "Bitbucket/Jira", level: "Beginner" },
   { name: "REST APIs", level: "Intermediate" },
-  { name: "SQL/PostgreSQL", level: "Intermediate" },
+  { name: "PostgreSQL", level: "Beginner" },
+  { name: "MySQL", level: "Intermediate" },
+  { name: "Python", level: "Advanced" },
+  { name: "C/C++", level: "Intermediate" },
+  { name: "Java", level: "Beginner" },
+  { name: "Bootstrap", level: "Intermediate" },
+  { name: "LINUX/UNIX", level: "Intermediate" },
+  { name: "Firebase", level: "Beginner" },
+  { name: "Excel", level: "Advanced" },
+  { name: "Power BI", level: "Beginner" },
 ];
 
 const Skills = () => {

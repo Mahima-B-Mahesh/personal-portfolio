@@ -82,6 +82,10 @@
   width: 65%;
 }
 
+.skill-level.beginner {
+  width: 40%;
+}
+
 /* Skill level text */
 .skill-level-text {
   font-size: 0.9rem;

@@ -6,16 +6,22 @@ const projectsData = [
     title: "Noteify",
     tech: "React (Frontend) + Django (Backend) | Authenticated",
     description: "A note-making application with authentication allowing users to create, edit, and manage their personal notes securely.",
+    duration: "Jun 2025 – Jul 2025",
+    location: "Remote",
   },
   {
     title: "Netflix Clone",
     tech: "React + Firebase Authentication",
     description: "A Netflix clone with authenticated user login and dynamic movie/series browsing features.",
+    duration: "Aug 2025 – Sep 2025",
+    location: "Remote",
   },
   {
     title: "PageWise",
     tech: "Django (Authenticated)",
     description: "A book review application with user authentication, enabling users to add reviews and ratings for books.",
+    duration: "Jul 2025 – Aug 2025",
+    location: "Remote",
   },
   {
     title: "VITAFIT",
