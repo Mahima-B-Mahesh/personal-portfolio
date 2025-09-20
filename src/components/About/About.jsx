@@ -9,7 +9,7 @@ const About = () => {
         {/* Left Side - Image */}
         <div className="about-image">
           <img 
-            src={`portfolio/assets/profile-pic.jpeg`} 
+            src={`personal-portfolio/assets/profile-pic.jpeg`} 
             alt="Mahima B Mahesh" 
           />
         </div>
