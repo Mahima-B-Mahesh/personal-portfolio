@@ -82,8 +82,27 @@
 }
 
 /* Responsive */
+/* Default grid */
+
+/* Tablet screens */
 @media (max-width: 768px) {
   .coursework-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .coursework-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-card {
+    padding: 1rem; /* reduce padding for small screens */
+  }
+
+  .coursework {
+    padding: 3rem 1rem; /* less padding on small screens */
+  }
+}
+
