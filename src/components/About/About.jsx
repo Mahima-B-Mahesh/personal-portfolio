@@ -9,7 +9,7 @@ const About = () => {
         {/* Left Side - Image */}
         <div className="about-image">
           <img 
-            src={`${import.meta.env.BASE_URL}assets/profile-pic.jpeg`} 
+            src={`portfolio/assets/profile-pic.jpeg`} 
             alt="Mahima B Mahesh" 
           />
         </div>
