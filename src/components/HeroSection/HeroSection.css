@@ -1,0 +1,106 @@
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1f1f2e, #2a2a3d);
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gradient Overlay Glow */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(0,229,255,0.2), transparent 70%);
+  animation: rotateGlow 15s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotateGlow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Content */
+.hero-content {
+  max-width: 800px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Headings */
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #00e5ff;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.3rem;
+  text-shadow: 0 0 15px rgba(0, 229, 255, 0.5);
+}
+
+.hero-role {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-bottom: 1.2rem;
+}
+
+/* Description */
+.hero-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: #00e5ff;
+  color: #1f1f2e;
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+}
+
+.btn.primary:hover {
+  background: #00c9e5;
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.9);
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid #00e5ff;
+  color: #00e5ff;
+}
+
+.btn.secondary:hover {
+  background: rgba(0, 229, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.4);
+}

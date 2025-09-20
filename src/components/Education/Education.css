@@ -1,0 +1,86 @@
+/* Education Section */
+.education {
+  background: linear-gradient(135deg, #1f1f2e, #2a2a3d);
+  color: #fff;
+  padding: 5rem 2rem;
+}
+
+.education-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.education-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00e5ff;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 12px rgba(0,229,255,0.7);
+}
+
+.education-subtitle {
+  color: #ccc;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+/* Education list */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Individual card */
+.education-card {
+  background: rgba(42, 42, 61, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 1.8rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 700px;
+  text-align: left;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 30px rgba(0,229,255,0.5);
+}
+
+/* Card content */
+.education-degree {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #00e5ff;
+  margin-bottom: 0.3rem;
+}
+
+.education-institution {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ccc;
+  margin-bottom: 0.3rem;
+}
+
+.education-year-location {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 0.8rem;
+}
+
+.education-gpa {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .education-card {
+    padding: 1.5rem;
+  }
+}

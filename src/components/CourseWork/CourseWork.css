@@ -1,0 +1,89 @@
+/* Coursework Section */
+.coursework {
+  background: linear-gradient(135deg, #1f1f2e, #2a2a3d);
+  color: #fff;
+  padding: 5rem 2rem;
+}
+
+.coursework-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.coursework-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00e5ff;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 12px rgba(0,229,255,0.7);
+}
+
+.coursework-subtitle {
+  color: #ccc;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+/* Grid layout for courses */
+.coursework-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+/* Individual course card */
+.course-card {
+  background: rgba(42, 42, 61, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0,229,255,0.6);
+}
+
+/* Course Name */
+.course-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #00e5ff;
+  margin-bottom: 0.6rem;
+}
+
+/* Progress Bar Container */
+.course-bar {
+  width: 100%;
+  height: 10px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+/* Progress Fill */
+.course-progress {
+  height: 100%;
+  background: #00e5ff;
+  border-radius: 50px;
+  transition: width 0.5s ease;
+}
+
+/* Progress Text */
+.course-level-text {
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .coursework-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
