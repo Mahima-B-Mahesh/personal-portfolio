@@ -13,10 +13,20 @@ import CourseWork from './components/CourseWork/CourseWork.jsx'
 import { useState } from "react";
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(() => {
+    const saved = localStorage.getItem("theme");
+    return saved ? saved === "dark" : true;
+  });
+
+  const toggleDark = () => {
+    const next = !darkMode;
+    setDarkMode(next);
+    localStorage.setItem("theme", next ? "dark" : "light");
+  };
+
   return (
-    <div className={darkMode ? "dark bg-gray-900 text-white" : "bg-white text-gray-900"}>
-      <Navbar toggleDark={() => setDarkMode(!darkMode)} />
+    <div data-theme={darkMode ? "dark" : "light"}>
+      <Navbar toggleDark={toggleDark} darkMode={darkMode} />
       <HeroSection />
       <About />
       <Skills />

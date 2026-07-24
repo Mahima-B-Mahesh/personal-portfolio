@@ -82,3 +82,43 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ── Light Mode ── */
+[data-theme="light"] .projects {
+  background: linear-gradient(135deg, #f8fafc, #e8f4f8);
+  color: #1a202c;
+}
+
+[data-theme="light"] .projects-title {
+  color: #0097a7;
+  text-shadow: none;
+}
+
+[data-theme="light"] .projects-subtitle {
+  color: #4a5568;
+}
+
+[data-theme="light"] .project-card {
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+[data-theme="light"] .project-card:hover {
+  box-shadow: 0 6px 30px rgba(0, 151, 167, 0.25);
+}
+
+[data-theme="light"] .project-name {
+  color: #0097a7;
+}
+
+[data-theme="light"] .project-tech {
+  color: #4a5568;
+}
+
+[data-theme="light"] .project-duration-location {
+  color: #718096;
+}
+
+[data-theme="light"] .project-description {
+  color: #4a5568;
+}

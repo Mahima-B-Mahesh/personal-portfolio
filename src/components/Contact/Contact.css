@@ -71,3 +71,29 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* ── Light Mode ── */
+[data-theme="light"] .contact {
+  background: linear-gradient(135deg, #f8fafc, #e8f4f8);
+  color: #1a202c;
+}
+
+[data-theme="light"] .contact-title {
+  color: #0097a7;
+  text-shadow: none;
+}
+
+[data-theme="light"] .contact-subtitle {
+  color: #4a5568;
+}
+
+[data-theme="light"] .contact-card {
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  color: #1a202c;
+}
+
+[data-theme="light"] .contact-card:hover {
+  box-shadow: 0 6px 25px rgba(0, 151, 167, 0.25);
+  color: #0097a7;
+}

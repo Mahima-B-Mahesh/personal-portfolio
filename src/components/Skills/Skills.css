@@ -98,3 +98,43 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ── Light Mode ── */
+[data-theme="light"] .skills {
+  background: linear-gradient(135deg, #e8f4f8, #f8fafc);
+  color: #1a202c;
+}
+
+[data-theme="light"] .skills-title {
+  color: #0097a7;
+  text-shadow: none;
+}
+
+[data-theme="light"] .skills-subtitle {
+  color: #4a5568;
+}
+
+[data-theme="light"] .skill-card {
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+[data-theme="light"] .skill-card:hover {
+  box-shadow: 0 6px 30px rgba(0, 151, 167, 0.25);
+}
+
+[data-theme="light"] .skill-name {
+  color: #0097a7;
+}
+
+[data-theme="light"] .skill-bar {
+  background: rgba(0,0,0,0.08);
+}
+
+[data-theme="light"] .skill-level {
+  background: #0097a7;
+}
+
+[data-theme="light"] .skill-level-text {
+  color: #555;
+}

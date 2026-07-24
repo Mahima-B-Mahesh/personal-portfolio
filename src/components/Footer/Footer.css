@@ -58,3 +58,34 @@
     gap: 1rem;
   }
 }
+
+/* ── Light Mode ── */
+[data-theme="light"] .footer {
+  background: linear-gradient(135deg, #e8f4f8, #f0f4f8);
+  color: #1a202c;
+}
+
+[data-theme="light"] .footer-logo {
+  color: #0097a7;
+  text-shadow: none;
+}
+
+[data-theme="light"] .footer-logo-highlight {
+  color: #1a202c;
+}
+
+[data-theme="light"] .footer-tagline {
+  color: #4a5568;
+}
+
+[data-theme="light"] .footer-socials a {
+  color: #4a5568;
+}
+
+[data-theme="light"] .footer-socials a:hover {
+  color: #0097a7;
+}
+
+[data-theme="light"] .footer-copy {
+  color: #718096;
+}

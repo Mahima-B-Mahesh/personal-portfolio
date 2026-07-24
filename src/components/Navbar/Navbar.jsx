@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import './Navbar.css'
 
-const Navbar = () => {
+const Navbar = ({ toggleDark, darkMode }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const links = [
@@ -13,7 +13,7 @@ const Navbar = () => {
     { name: "Education", href: "#education" },
     { name: "Course Work", href: "#coursework" },
     { name: "Contact", href: "#contact" },
-    { name: "Resume", href: "https://drive.google.com/file/d/1jKTV4D3UlkjTqNBBr8tBpxikggQ1YARp/view?usp=drivesdk" },
+    { name: "Resume", href: "https://drive.google.com/file/d/1C55-fAPrIVAjd58TLp6B0X-A7apEvDEF/view?usp=sharing" },
   ];
 
   return (
@@ -33,6 +33,11 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
+        {/* Theme Toggle */}
+        <button className="theme-toggle-btn" onClick={toggleDark} aria-label="Toggle theme">
+          {darkMode ? <Sun size={22} /> : <Moon size={22} />}
+        </button>
 
         {/* Mobile Menu Button */}
         <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>

@@ -95,3 +95,43 @@
     padding: 1.5rem;
   }
 }
+
+/* ── Light Mode ── */
+[data-theme="light"] .experience {
+  background: linear-gradient(135deg, #e8f4f8, #f8fafc);
+  color: #1a202c;
+}
+
+[data-theme="light"] .experience-title {
+  color: #0097a7;
+  text-shadow: none;
+}
+
+[data-theme="light"] .experience-subtitle {
+  color: #4a5568;
+}
+
+[data-theme="light"] .experience-card {
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+[data-theme="light"] .experience-card:hover {
+  box-shadow: 0 6px 30px rgba(0, 151, 167, 0.25);
+}
+
+[data-theme="light"] .experience-role {
+  color: #0097a7;
+}
+
+[data-theme="light"] .experience-company {
+  color: #4a5568;
+}
+
+[data-theme="light"] .experience-duration-location {
+  color: #718096;
+}
+
+[data-theme="light"] .experience-responsibilities li {
+  color: #4a5568;
+}

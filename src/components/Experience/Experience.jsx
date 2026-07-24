@@ -3,9 +3,21 @@ import './Experience.css'
 
 const experienceData = [
   {
+    company: "DAIVIKSOFT TECHNOLOGIES",
+    role: "Software Developer",
+    duration: "Oct 2025 - Present",
+    location: "Kochi",
+    responsibilities: [
+      "Develop React Native mobile applications and React web applications for company products.",
+      "Integrate REST APIs and manage application state using Zustand.",
+      "Collaborate using Git, GitHub, code reviews, and Agile workflows.",
+      "Use VS Code, Cursor, and Claude Code for efficient day-to-day development."
+    ]
+  },
+  {
     company: "Sporthood",
     role: "Python Django Developer Intern",
-    duration: "May 2025 - Present",
+    duration: "May 2025 - Nov 2025",
     location: "Trivandrum",
     responsibilities: [
       "Collaborated with cross-functional teams to build and maintain company websites using Django REST Framework and React.js.",

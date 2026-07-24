@@ -98,11 +98,51 @@
   }
 
   .course-card {
-    padding: 1rem; /* reduce padding for small screens */
+    padding: 1rem;
   }
 
   .coursework {
-    padding: 3rem 1rem; /* less padding on small screens */
+    padding: 3rem 1rem;
   }
+}
+
+/* ── Light Mode ── */
+[data-theme="light"] .coursework {
+  background: linear-gradient(135deg, #e8f4f8, #f8fafc);
+  color: #1a202c;
+}
+
+[data-theme="light"] .coursework-title {
+  color: #0097a7;
+  text-shadow: none;
+}
+
+[data-theme="light"] .coursework-subtitle {
+  color: #4a5568;
+}
+
+[data-theme="light"] .course-card {
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+[data-theme="light"] .course-card:hover {
+  box-shadow: 0 6px 25px rgba(0, 151, 167, 0.25);
+}
+
+[data-theme="light"] .course-name {
+  color: #0097a7;
+}
+
+[data-theme="light"] .course-bar {
+  background: rgba(0,0,0,0.08);
+}
+
+[data-theme="light"] .course-progress {
+  background: #0097a7;
+}
+
+[data-theme="light"] .course-level-text {
+  color: #555;
 }
 

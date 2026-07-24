@@ -95,3 +95,52 @@
   background: rgba(0,229,255,0.1);
   box-shadow: 0 0 20px rgba(0,229,255,0.4);
 }
+
+/* ── Light Mode ── */
+[data-theme="light"] .about {
+  background: linear-gradient(135deg, #f8fafc, #e8f4f8);
+  color: #1a202c;
+}
+
+[data-theme="light"] .about-title {
+  color: #0097a7;
+  text-shadow: none;
+}
+
+[data-theme="light"] .about-text {
+  color: #4a5568;
+}
+
+[data-theme="light"] .highlight {
+  color: #0097a7;
+}
+
+[data-theme="light"] .about-image img {
+  border-color: #0097a7;
+  box-shadow: 0 0 25px rgba(0, 151, 167, 0.3);
+}
+
+[data-theme="light"] .about-image img:hover {
+  box-shadow: 0 0 40px rgba(0, 151, 167, 0.5);
+}
+
+[data-theme="light"] .btn.primary {
+  background: #0097a7;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0, 151, 167, 0.4);
+}
+
+[data-theme="light"] .btn.primary:hover {
+  background: #007b8a;
+  box-shadow: 0 0 25px rgba(0, 151, 167, 0.6);
+}
+
+[data-theme="light"] .btn.secondary {
+  border-color: #0097a7;
+  color: #0097a7;
+}
+
+[data-theme="light"] .btn.secondary:hover {
+  background: rgba(0, 151, 167, 0.1);
+  box-shadow: 0 0 20px rgba(0, 151, 167, 0.3);
+}

@@ -2,16 +2,26 @@ import React from 'react'
 import './Skills.css'
 
 const skillsData = [
+  { name: "React Native", level: "Advanced" },
   { name: "React", level: "Advanced" },
   { name: "Django", level: "Advanced" },
   { name: "JavaScript", level: "Advanced" },
+  { name: "TypeScript", level: "Intermediate" },
   { name: "HTML5", level: "Advanced" },
   { name: "CSS3", level: "Advanced" },
   { name: "Tailwind CSS", level: "Intermediate" },
+  { name: "Redux/Context API", level: "Intermediate" },
+  { name: "REST APIs", level: "Intermediate" },
+  { name: "Firebase", level: "Beginner" },
+  { name: "Redis", level: "Beginner" },
+  { name: "Android Studio", level: "Beginner" },
+  { name: "Zustand", level: "Intermediate" },
+  { name: "Xcode", level: "Beginner" },
+  { name: "Expo", level: "Intermediate" },
+  { name: "VSCode", level: "Advanced" },
   { name: "Git & GitHub", level: "Intermediate" },
   { name: "Postman", level: "Intermediate" },
   { name: "Bitbucket/Jira", level: "Beginner" },
-  { name: "REST APIs", level: "Intermediate" },
   { name: "PostgreSQL", level: "Beginner" },
   { name: "MySQL", level: "Intermediate" },
   { name: "Python", level: "Advanced" },
@@ -19,7 +29,6 @@ const skillsData = [
   { name: "Java", level: "Beginner" },
   { name: "Bootstrap", level: "Intermediate" },
   { name: "LINUX/UNIX", level: "Intermediate" },
-  { name: "Firebase", level: "Beginner" },
   { name: "Excel", level: "Advanced" },
   { name: "Power BI", level: "Beginner" },
 ];
@@ -40,9 +49,12 @@ const Skills = () => {
               <div className="skill-bar">
                 <div
                   className={`skill-level ${skill.level.toLowerCase()}`}
+                  style={skill.progress ? { width: `${skill.progress}%` } : undefined}
                 ></div>
               </div>
-              <span className="skill-level-text">{skill.level}</span>
+              <span className="skill-level-text">
+                {skill.progress ? `${skill.progress}%` : skill.level}
+              </span>
             </div>
           ))}
         </div>
